@@ -1,0 +1,56 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Sample</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button id="btn">Click me</button>
+    <div style="width: 300px; height: 300px;background:green ;"id="box">
+        <h1>Waffiyya shadiya</h1>
+    </div>
+    <input type="text" id="inp"><br>
+    <label  style="display:none;" id="error">Enter minimum 6 characters</label><br>
+    <input type="text" id =""><br>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+               // alert("button pressed")
+
+               $("#box").toggle(3000)
+             //  $("#box").fadeToggle
+
+            })
+
+
+            $("#btn").mouseenter(function(){
+
+                $(this).css({"background":"red"})
+            })
+
+                $("#inp").blur(function(){
+
+                    var text =$(this).val()
+                    if(text.length<6){
+                       // alert("Enter minimum character")
+                       $("#error").show();
+
+                    }else{
+                        $("#error").hide();
+                    }
+                })
+
+
+
+
+            })
+
+
+
+    
+    </script>
+    
+</body>
+</html>
