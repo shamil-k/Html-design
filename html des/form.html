@@ -4,45 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script src="for form.js"></script>
 </head>
 <body>
-  <form action="">
-      <label>Full Name</label>
-      <input type="text"><br>
+  <form  id="signup-form">
+      <div class="field">
+      <label >First Name</label>
+      <input type="text" name="fname" class="field" placeholder="first name"><br>
+      <label >last name</label>
+      <input type="text" name="sname" class="field" placeholder="last name"><br>
       <label>Age</label>
-      <input type ="number"><br>
+      <input type ="number" name="for-age"><br>
       <label>Email</label>
-      <input type="email" ><br>
+      <input type="email"  name="forMail" class="field"><br>
       <label>Gender</label><br>
-      <input type="radio" name="vv">
+      <input type="radio" name="forGender">
       <label>male</label><br>
-      <input type = "radio" name="vv">
+      <input type = "radio" name="forGender">
       <label>Female</label><br>
-      <select>
+      
+      
+      <select name="forQual">
           <option>Choose..</option>
           <option>+2</option>
           <option>UG</option>
       </select>
       <br>
       <label>Skills</label><br>
-      <input type = "checkbox">
+      <input type = "checkbox" name="forSkill"> 
       <label>html</label><br>
-      <input type = "checkbox">
+      <input type = "checkbox" name="forSkill">
       <label>css</label><br>
-      <input type = "checkbox">
+      <input type = "checkbox" name="forSkill">
       <label>js</label><br>
-      
+    </div>
 
-      <video width="500px" height="200px" controls loop autoplay muted>
-          <source src="http://techslides.com/demos/sample-videos/small.mp4">
-      </video>
-      <br>
-      <audio controls>
-          <source src="http://techslides.com/demos/samples/sample.mp3">
-          </audio >
-      <br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/iJ8xhi7HN6s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <br>
+     
      
       <input type="submit" value="submit">
   </form>
